@@ -15,10 +15,10 @@ Q = \min(A_1, A_2) \quad \text{and} \quad P = \max(A_1, A_2)
 \]
 
 \section{About The \(T_x\) intercept Equation}
-The equation we take our first angle and the 2nd angle in the curved line becuase the line can have an inf amount of curves the true X intercept will never be known but we can take out best guess based on the equation \(B\) is our point on the \(Y\) Axis the square root of our max angle minus our min angle is taken this is the slope for our img line the 1/2 being either positive or negitive based on the way the line is going + if its going up - if the line is going down. much like finding electron loction we will never be able to find our the precise X intercept but we can get close. We use a sum function to take the iteration from our min point and our max point in our T array. The reason for the \(n\) var is becuase we can go till we hit \(n\) which is the accurate location of the X intercept but it is hard to find but it will be a number in the min max part of the T array so it does exist. 
+In the equation, we take our first angle and the 2nd angle in the curved line because the line can have an inf amount of curves the true X intercept will never be known but we can take out the best guess based on the equation \(B\) is our point on the \(Y\) Axis the square root of our max angle minus our min angle is taken this is the slope for our img line the 1/2 being either positive or negative based on the way the line is going + if it's going up - if the line is going down. much like finding electron location, we will never be able to find the precise X intercept but we can get close. We use a sum function to take the iteration from our min point and our max point in our T array. The reason for the \(n\) var is that we can go till we hit \(n\) which is the accurate location of the X intercept but it is hard to find but it will be a number in the min-max part of the T array so it does exist. 
 \section{What Is The \(T\) Array}
 
-After talking so much about the T array it is important to go over what it is. A T array is an array that takes into account the lines direction as it changes with each curve made the the distance traveled by the line during its curving period. When a new curve is made on the line it takes up space on a graph while this could be so small and hard to notice a curve when being made will move some distance on the X axis the only case this is no true is when the curve as a degree of 0 or less than 90 becuase on a 2D graph the line after this curve will move back into the negative space. The following shows how a T array is formated.
+After talking so much about the T array it is important to go over what it is. A T array is an array that takes into account the line's direction as it changes with each curve made in the distance traveled by the line during its curving period. When a new curve is made on the line it takes up space on a graph while this could be so small and hard to notice a curve when being made will move some distance on the X axis the only case this is not true is when the curve as a degree of 0 or less than 90 because on a 2D graph, the line after this curve will move back into the negative space. The following shows how a T array is formatted.
 
 \[
 T = \left[ \begin{array}{@{}l@{}}
@@ -33,7 +33,7 @@ T = \left[ \begin{array}{@{}l@{}}
 \end{array} \right]
 \]
 
-the min and max that we take from the T array is i-4 i+4. \(i\) and \(n\) are the same just stated differntly becuase we can never know n we use the square root of P-Q vars used earlier in the first equations.
+the min and max that we take from the T array is i-4 i+4. \(i\) and \(n\) are the same just stated differently because we can never know n if we use the square root of P-Q vars used earlier in the first equations.
 
  \section{Examples using \(T_x\)}
 
@@ -54,6 +54,22 @@ T = \begin{bmatrix}
 \min(T) \quad \text{and} \quad \max(T)
 \]
 
-The T shows the info about this random line and finding the X intercept. 2 is the first steps taken on the X 6 is how far it moves down the Y we use 0 next becuase the angle is 90 degrees the square root of 30 is the line slope and 2-10 is our X intercept range
+The T shows the info about this random line and finding the X intercept. 2 is the first step taken on the X 6 is how far it moves down the Y we use 0 next because the angle is 90 degrees the square root of 30 is the line slope and 2-10 is our X intercept range. But why is  2-10 the way we can get this is by finding the nearest perfect square such as \(sqrt{36}\) which is near \(sqrt{30}\) and this will be our starting point 
+
+
+ \section{Using \(T_x\) when both angles are 90 degrees}
+ This is very simple when both angles are 90 and the only time we can get very close to a correct intercept. First, you get the 1st step from the T array and go to that point on the graph. Next, move down the target number of steps again using img data from the T array. Next, make the new angle and move the target number of steps to the point. Once you have added this point dash a line through the X-axis like you are extending the line you have. This is how 90-degree angles are drawn when using \(T_x\) while this line might look like it keeps going this like its just img and can exist anywhere. The reason for dashing is because the line is random it can curve at any time but if it does not then this is the best X intercept for the line.
+
+
+\section{Answering \(T_x\) Problems}
+To see the following problem refer to the one \(Examples\) Section. The answer to this problem would be this:
+
+\[
+ h = \sqrt{30} \times \frac{-1}{-2} + 8 \approx T 
+\]
+
+The name of this form it \(T_h\) form and it is used to show the answer to the of \(T_x\) Problems.
+
+
 
 \end{document}
