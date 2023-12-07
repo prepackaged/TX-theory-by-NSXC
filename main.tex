@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+\section{The \(T_x\) intercept theory}
+The theory of \(T\) is used for a line that has many random curves. The needed data for this equation are angles \(a_1\) and \(a_2\). \(a_1\) is the starting angle of the line, while \(a_2\) is the angle of the 2nd curve in the line. This line can have an infinite amount of curves after these two, but they will not be taken into account when using this theory. The first equation is as follows.
+\[
+Q = \min(A_1, A_2) \quad \text{and} \quad P = \max(A_1, A_2)
+\]
+\[
+\min(T) \quad \text{and} \quad \max(T)
+\]
+\[
+\sum_{i=\min(T)}^{\max(T) \vee n} \left( h = \sqrt{P - Q} \times \left( \frac{+}{-} \frac{1}{2} \right) + b \right)
+\]
+
+\section{About The \(T_x\) intercept Equation}
+The equation we take our first angle and the 2nd angle in the curved line becuase the line can have an inf amount of curves the true X intercept will never be known but we can take out best guess based on the equation \(B\) is our point on the \(Y\) Axis the square root of our max angle minus our min angle is taken this is the slope for our img line the 1/2 being either positive or negitive based on the way the line is going + if its going up - if the line is going down. much like finding electron loction we will never be able to find our the precise X intercept but we can get close. We use a sum function to take the iteration from our min point and our max point in our T array. The reason for the \(n\) var is becuase we can go till we hit \(n\) which is the accurate location of the X intercept but it is hard to find but it will be a number in the min max part of the T array so it does exist. 
+\section{What Is The \(T\) Array}
+
+After talking so much about the T array it is important to go over what it is. A T array is an array that takes into account the lines direction as it changes with each curve made the the distance traveled by the line during its curving period. When a new curve is made on the line it takes up space on a graph while this could be so small and hard to notice a curve when being made will move some distance on the X axis the only case this is no true is when the curve as a degree of 0 or less than 90 becuase on a 2D graph the line after this curve will move back into the negative space. The following shows how a T array is formated.
+
+\[
+T = \left[ \begin{array}{@{}l@{}}
+    \begin{aligned}
+        J &\leftarrow \text{first number of steps on the x-axis made while the curve is formed}, \\
+        K &\leftarrow \begin{aligned}&\text{number of steps taken after the first curve is made,} \\ &\text{indicating how far this line goes down the Y},\end{aligned} \\
+        L &\leftarrow \text{the number of steps taken by the 2nd line}, \\
+        G &\leftarrow \text{how far the line is from the X-axis}, \\
+        H &\leftarrow \text{line slope}, \\
+        i-i &\leftarrow 4 \text{ down units away from } n \text{ and 4 units up away from } n
+    \end{aligned}
+\end{array} \right]
+\]
+
+the min and max that we take from the T array is i-4 i+4. \(i\) and \(n\) are the same just stated differntly becuase we can never know n we use the square root of P-Q vars used earlier in the first equations.
+
+ \section{Examples using \(T_x\)}
+
+\[
+Q = \min(120_1, 90_2) \quad \text{and} \quad P = \max(120_1, 90_2)
+\]
+
+\[
+\sum_{i=\min(2)}^{\max(10) \vee n} \left( h = \sqrt{120 - 90} \times \left( \frac{-}{-} \frac{1}{2} \right) + 8 \right)
+\]
+
+\[
+T = \begin{bmatrix}
+    2 & 6 & 0 & \approx 2 & \sqrt{30} & 2-10 \\
+\end{bmatrix}
+\]
+\[
+\min(T) \quad \text{and} \quad \max(T)
+\]
+
+The T shows the info about this random line and finding the X intercept. 2 is the first steps taken on the X 6 is how far it moves down the Y we use 0 next becuase the angle is 90 degrees the square root of 30 is the line slope and 2-10 is our X intercept range
+
+\end{document}
