@@ -1,9 +1,11 @@
 \documentclass{article}
 \usepackage{amsmath}
+\usepackage{pgfplots}
+\usetikzlibrary{decorations.markings}
 
 \begin{document}
-\section{The \(T_x\) intercept theory}
-The theory of \(T\) is used for a line that has many random curves. The needed data for this equation are angles \(a_1\) and \(a_2\). \(a_1\) is the starting angle of the line, while \(a_2\) is the angle of the 2nd curve in the line. This line can have an infinite amount of curves after these two, but they will not be taken into account when using this theory. The first equation is as follows.
+\section{The \(T_x\) Imaginary Line Intercept Theory}
+The theory of \(T\) is used for imaginary lines that have many random curves. The needed data for this equation are angles \(a_1\) and \(a_2\). \(a_1\) is the starting angle of the line, while \(a_2\) is the angle of the 2nd curve in the line. This line can have an infinite amount of curves after these two, but they will not be taken into account when using this theory. The first equation is as follows.
 \[
 Q = \min(A_1, A_2) \quad \text{and} \quad P = \max(A_1, A_2)
 \]
@@ -70,6 +72,49 @@ To see the following problem refer to the one \(Examples\) Section. The answer t
 
 The name of this form it \(T_h\) form and it used to show the answer to the of \(T_x\) Problems.
 
+
+\section{Proof of \(T_x\) Work}
+The following shos the \(T_x\) problem graphed 
+
+
+
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={$x$},
+    ylabel={$y$},
+    grid=major,
+    ymin=-10, ymax=20,
+    xmin=2, xmax=10, 
+    samples=100,
+    domain=2:10 
+]
+\addplot[red, thick] {sqrt(30) * x * (-1/2) + 8};
+\end{axis}
+\end{tikzpicture}
+
+The graph shows the \(T_h\) equation of 
+\[
+ h = \sqrt{30} \times \frac{-1}{-2} + 8 \approx T 
+\]
+ graphed as it enters close to its unkown X intercept this shows the closest posibilty to the real part where the real intercept is \(n\). 
+
+\section{Why no \(functions\)}
+
+The reason that we don't use functions for the curved lines is because we dealing with lines exist everywhere but don't at the same time these lines are totaly random in space and are subject to change at any time. 
+
+
+\section*{Acknowledgments}
+
+\section*{Author Information}
+{[NSXC-github]} \\
+{[Software Developer]} \\
+
+\section*{Document Information}
+This document was typeset using \LaTeX. The graphics were created using the \texttt{pgfplots} and \texttt{tikz} packages.
+
+
+\section*{License}
+This work is licensed under the [Creative Commons Attribution 4.0 International License].
 
 
 \end{document}
