@@ -17,10 +17,10 @@ Q = \min(A_1, A_2) \quad \text{and} \quad P = \max(A_1, A_2)
 \]
 
 \section{About The \(T_x\) intercept Equation}
-The equation we take our first angle and the 2nd angle in the curved line becuase the line can have an inf amount of curves the true X intercept will never be known but we can take out best guess based on the equation \(B\) is our point on the \(Y\) Axis the square root of our max angle minus our min angle is taken this is the slope for our img line the 1/2 being either positive or negitive based on the way the line is going + if its going up - if the line is going down. much like finding electron loction we will never be able to find our the precise X intercept but we can get close. We use a sum function to take the iteration from our min point and our max point in our T array. The reason for the \(n\) var is becuase we can go till we hit \(n\) which is the accurate location of the X intercept but it is hard to find but it will be a number in the min max part of the T array so it does exist. 
+In the equation, we take our first angle and the 2nd angle in the curved line because the line can have an inf amount of curves the true X intercept will never be known but we can take out the best guess based on the equation \(B\) is our point on the \(Y\) Axis the square root of our max angle minus our min angle is taken this is the slope for our img line the 1/2 being either positive or negative based on the way the line is going + if its going up - if the line is going down. much like finding electron location, we will never be able to find our precise X intercept but we can get close. We use a sum function to take the iteration from our min point and our max point in our T array. The reason for the \(n\) var is that we can go till we hit \(n\) which is the accurate location of the X intercept but it is hard to find but it will be a number in the min-max part of the T array so it does exist. 
 \section{What Is The \(T\) Array}
 
-After talking so much about the T array it is important to go over what it is. A T array is an array that takes into account the lines direction as it changes with each curve made the the distance traveled by the line during its curving period. When a new curve is made on the line it takes up space on a graph while this could be so small and hard to notice a curve when being made will move some distance on the X axis the only case this is no true is when the curve as a degree of 0 or less than 90 becuase on a 2D graph the line after this curve will move back into the negative space. The following shows how a T array is formated.
+After talking so much about the T array it is important to go over what it is. A T array is an array that takes into account the line's direction as it changes with each curve made in the distance traveled by the line during its curving period. When a new curve is made on the line it takes up space on a graph while this could be so small and hard to notice a curve when being made will move some distance on the X axis the only case this is not true is when the curve as a degree of 0 or less than 90 because on a 2D graph, the line after this curve will move back into the negative space. The following shows how a T array is formatted.
 
 \[
 T = \left[ \begin{array}{@{}l@{}}
@@ -35,7 +35,7 @@ T = \left[ \begin{array}{@{}l@{}}
 \end{array} \right]
 \]
 
-the min and max that we take from the T array is i-4 i+4. \(i\) and \(n\) are the same just stated differntly becuase we can never know n we use the square root of P-Q vars used earlier in the first equations.
+the min and max that we take from the T array is i-4 i+4. \(i\) and \(n\) are the same just stated differently because we can never know n if we use the square root of P-Q vars used earlier in the first equations.
 
  \section{Examples using \(T_x\)}
 
@@ -56,11 +56,11 @@ T = \begin{bmatrix}
 \min(T) \quad \text{and} \quad \max(T)
 \]
 
-The T shows the info about this random line and finding the X intercept. 2 is the first steps taken on the X 6 is how far it moves down the Y we use 0 next becuase the angle is 90 degrees the square root of 30 is the line slope and 2-10 is our X intercept range. But why is  2-10 the way we can get this is by finding the nearest perfect square such as \(sqrt{36}\) which is near \(sqrt{30}\) and this will be our starting point 
+The T shows the info about this random line and finding the X intercept. 2 is the first step taken on the X 6 is how far it moves down the Y we use 0 next because the angle is 90 degrees the square root of 30 is the line slope and 2-10 is our X intercept range. But why is  2-10 the way we can get this is by finding the nearest perfect square such as \(sqrt{36}\) which is near \(sqrt{30}\) and this will be our starting point 
 
 
  \section{Using \(T_x\) when both angles are 90 degrees}
- This is very simple when both angles are 90 and the only time we can get very close to a correct intercept. First you get the 1st step from the T array and go to that point on the graph. Next move down the target number of steps again using img data from the T array. Next make the new angle and move the target number of steps to the point. Once you are add this point dash a line through the X axis like you are extending the line you have. This is how 90 degree angles are drawn when using \(T_x\) while this line might look like it keeps going this like its just img and can exist anywhere. The reason for dashing is becuase the line is random it can curve at anytime but if it does not then this is the best X intercept for the line.
+ This is very simple when both angles are 90 and the only time we can get very close to a correct intercept. First, you get the 1st step from the T array and go to that point on the graph. Next, move down the target number of steps again using img data from the T array. Next, make the new angle and move the target number of steps to the point. Once you have added this point dash a line through the X-axis like you are extending the line you have. This is how 90-degree angles are drawn when using \(T_x\) while this line might look like it keeps going like it is just img and can exist anywhere. The reason for dashing is because the line is random it can curve at any time but if it does not then this is the best X intercept for the line.
 
 
 \section{Answering \(T_x\) Problems}
@@ -70,7 +70,7 @@ To see the following problem refer to the one \(Examples\) Section. The answer t
  h = \sqrt{30} \times \frac{-1}{-2} + 8 \approx T 
 \]
 
-The name of this form it \(T_h\) form and it used to show the answer to the of \(T_x\) Problems.
+The name of this form it \(T_h\) form and it is used to show the answer to the of \(T_x\) Problems.
 
 
 \section{Proof of \(T_x\) Work}
@@ -96,25 +96,57 @@ The graph shows the \(T_h\) equation of
 \[
  h = \sqrt{30} \times \frac{-1}{-2} + 8 \approx T 
 \]
- graphed as it enters close to its unkown X intercept this shows the closest posibilty to the real part where the real intercept is \(n\). 
+ graphed as it enters close to its unknown X intercept this shows the closest possibility to the real part where the real intercept is \(n\). 
 
 \section{Why no \(functions\)}
 
-The reason that we don't use functions for the curved lines is because we dealing with lines exist everywhere but don't at the same time these lines are totaly random in space and are subject to change at any time. 
+The reason that we don't use functions for the curved lines is because we deal with lines that exist everywhere but don't at the same time these lines are totally random in space and are subject to change at any time. 
+
+\section{Official \(T_x\) Theory Problem List For Teachers}
 
 
-\section*{Acknowledgments}
+\subsection{Problem 1}
+A builder is trying to find out where an iron beam will pass through the bottom support beam. The builder knows that the passing beam is \(2\) feet out from its own support beam before heading down at a \(45\) degree angle into the bottom beam. By looking at the blue prints the builder does not know how far the bottom beam is from the passing beam but he does know that the passing beam starts \(78\) feet up on the support beam. Using the \(T_x\) Theory right the equation for the passing beam in \(T_h\) from.
 
-\section*{Author Information}
-{[NSXC-github]} \\
-{[Software Developer]} \\
+\[
+\sum_{i=\min(4)}^{\max(12) \vee n} \left( h = \sqrt{45} \times \left( \frac{-}{-} \frac{1}{2} \right) + 78 \right)
+\]
+\[
+f(a, n) = a + 6.7i
+\]
 
-\section*{Document Information}
-This document was typeset using \LaTeX. The graphics were created using the \texttt{pgfplots} and \texttt{tikz} packages.
+\subsection{Problem 2}
+During the opening of the stock market for the day a trader notices that the rate of the value of stock1 is in a decreasing trend. Starting at a Y value of 23 dollars from the start going well for about 5 minutes before going down to around 15 dollars at a rate of 134-degree angle taking a total of 2 extra minutes before going down to 10 dollars with a down of 113 degrees find the T array and equation of the line giving that the XY bottom is 0 dollars!
 
 
-\section*{License}
-This work is licensed under the [Creative Commons Attribution 4.0 International License].
+\[
+\sum_{i=\min(0)}^{\max(10) \vee n} \left( h = \sqrt{21} \times \left( \frac{-}{-} \frac{1}{2} \right) + 23 \right)
+\]
+
+\[
+f(a, n) = a + 4.5i
+\]
+\[
+T = \begin{bmatrix}
+    5 & 8 & 2 & \approx 10 & \sqrt{21} & 0-10 \\
+\end{bmatrix}
+\]
+
+%\section*{Acknowledgments}
+
+%\section*{Author Information}
+%{[NSXC-github]} \\
+%{[Software Developer]} \\
+
+%\section*{Document Information}
+%This document was typeset using \LaTeX. The graphics were created using the \texttt{pgfplots} and \texttt{tikz} packages.
+
+
+%\section*{License}
+%This work is licensed under the [Creative Commons Attribution 4.0 International License].
 
 
 \end{document}
+
+NO TEXT AFTER HERE WILL BE TAKEN INTO ACCOUNT WHEN COMPILING 
+
